@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Vytvoreni nove vizitky</title>
+</head>
+<body>
+<h2>Nova vizitka</h2>
+<form th:action="@{/}" method="post">
+    <div>
+        <label for="jmeno">Jmeno</label>
+        <input id= "jmeno" name="jmeno" type="text"/>
+    </div>
+    <div>
+        <label for="firma">Firma</label>
+        <input id= "firma" name="firma" type="text"/>
+    </div>
+    <div>
+        <label for="ulice">Ulice</label>
+        <input id= "ulice" name="ulice" type="text"/>
+    </div>
+    <div>
+        <label for="obecPsc">obecPsc</label>
+        <input id= "obecPsc" name="obecPsc" type="text"/>
+    </div>
+    <div>
+        <label for="email">email</label>
+        <input id= "email" name="email" type="text"/>
+    </div>
+    <div>
+        <label for="telefon">telefon</label>
+        <input id= "telefon" name="telefon" type="text"/>
+    </div>
+    <div>
+        <label for="web">web</label>
+        <input id= "web" name="web" type="text"/>
+    </div>
+    <div>
+        <button>ulozit</button>
+    </div>
+</form>
+
+</body>
+</html>
