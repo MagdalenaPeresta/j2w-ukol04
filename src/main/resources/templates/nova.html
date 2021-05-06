@@ -2,41 +2,42 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-wEmeIV1mKuiNpC+IOBjI7aAzPcEZeedi5yW5f2yOq55WWLwNGmvvx4Um1vskeMj0" crossorigin="anonymous">
     <title>Vytvoreni nove vizitky</title>
 </head>
-<body>
-<h2>Nova vizitka</h2>
-<form th:action="@{/}" method="post">
+<body class="p-3 mb-2 bg-success text-white">
+<h2 class="text-center fs-1">Nová vizitka</h2>
+<form th:action="@{/}" method="post" class="mx-auto" style="width: 200px">
     <div>
-        <label for="jmeno">Jmeno</label>
-        <input id= "jmeno" name="jmeno" type="text"/>
+        <label class="form-floating mb-0" for="jmeno">Jméno</label>
+        <input class="form-floating mb-3" id= "jmeno" name="jmeno" type="text"/>
     </div>
     <div>
-        <label for="firma">Firma</label>
-        <input id= "firma" name="firma" type="text"/>
+        <label class="form-floating mb-0" for="firma">Firma</label>
+        <input class="form-floating mb-3" id= "firma" name="firma" type="text"/>
     </div>
     <div>
-        <label for="ulice">Ulice</label>
-        <input id= "ulice" name="ulice" type="text"/>
+        <label class="form-floating mb-0" for="ulice">Ulice</label>
+        <input class="form-floating mb-3" id= "ulice" name="ulice" type="text"/>
     </div>
     <div>
-        <label for="obecPsc">obecPsc</label>
-        <input id= "obecPsc" name="obecPsc" type="text"/>
+        <label class="form-floating mb-0" for="obecPsc">obec a Psc</label>
+        <input class="form-floating mb-3" id= "obecPsc" name="obecPsc" type="text"/>
     </div>
     <div>
-        <label for="email">email</label>
-        <input id= "email" name="email" type="text"/>
+        <label class="form-floating mb-0" for="email">email</label>
+        <input class="form-floating mb-3" id= "email" name="email" type="text"/>
     </div>
     <div>
-        <label for="telefon">telefon</label>
-        <input id= "telefon" name="telefon" type="text"/>
+        <label class="form-floating mb-0" for="telefon">telefon</label>
+        <input class="form-floating mb-3" id= "telefon" name="telefon" type="text"/>
     </div>
     <div>
-        <label for="web">web</label>
-        <input id= "web" name="web" type="text"/>
+        <label class="form-floating mb-0" for="web">web</label>
+        <input class="form-floating mb-3" id= "web" name="web" type="text"/>
     </div>
-    <div>
-        <button>ulozit</button>
+    <div class="d-grid gap-1 col-6 mx-auto">
+        <button class="btn btn-outline-warning btn-lg" >uložit</button>
     </div>
 </form>
 
